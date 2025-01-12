@@ -29,3 +29,4 @@ _start:
     # Exit program (if simulator supports ECALL for exit)
     li a7, 10                  # ECALL to exit
     ecall
+
