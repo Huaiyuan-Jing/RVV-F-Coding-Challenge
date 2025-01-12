@@ -24,7 +24,7 @@ _start:
 
     # Reduce sum the result into scalar register x10
     vredsum.vs v3, v2, v0      # Reduce sum of v2 into v3
-    mv x10, v3                 # Move the result to scalar register x10
+    vmv.x.s x10, v3                 # Move the result to scalar register x10
 
     # Exit program (if simulator supports ECALL for exit)
     li a7, 10                  # ECALL to exit
